@@ -1,0 +1,14 @@
+import os,sys,time,paltform
+btt = platform.architecture()[0]
+if btt=='32bit':
+    os.system("clear")
+    print("\n \033[1;97m[\033[1;92m✔\033[1;97m] Your Device Is \033[1;91m32bit")
+    os.system("chmod +x coki32")
+    os.system("./coki32")
+elif btt=='64bit':
+    os.system("clear")
+    print("\n \033[1;97m[\033[1;92m✔\033[1;97m] Your Device Is \033[1;91m64bit")
+    os.system("chmod +x coki")
+    os.system("./coki")
+else:
+	exit('\n \033[1;97m[\033[1;91m✘\033[1;97m]\033[1;91m Not Supported Your Device !!!!')
